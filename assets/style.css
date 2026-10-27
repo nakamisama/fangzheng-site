@@ -504,7 +504,7 @@ figure {
 .hero-seal {
   position: relative;
   flex: 0 0 auto;
-  width: clamp(200px, 26vw, 330px);
+  width: clamp(168px, 20vw, 258px);
   align-self: center;
   transform: translateY(-0.5rem);
 }
@@ -530,11 +530,23 @@ figure {
   );
 }
 
+/* 细边框：绢本立轴的装裱感，框内用实心纸底托住 logo */
 .logo-plate img {
   width: 100%;
   height: auto;
-  mix-blend-mode: multiply;
-  filter: saturate(0.97) contrast(1.02);
+  padding: 0.6rem;
+  background: linear-gradient(
+    to bottom right,
+    #f7f2e8 0%,
+    #f1eadd 55%,
+    #ece4d4 100%
+  );
+  border: 1px solid var(--gold-hair);
+  outline: 1px solid rgba(172, 125, 68, 0.16);
+  outline-offset: -7px;
+  box-shadow:
+    0 0 0 5px rgba(240, 233, 220, 0.55),
+    0 18px 38px -22px rgba(60, 45, 28, 0.5);
   animation: sealFloat 9s ease-in-out infinite alternate;
 }
 
