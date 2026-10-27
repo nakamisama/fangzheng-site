@@ -1,0 +1,7 @@
+.git
+.gitignore
+.tmp
+tools
+*.md
+Dockerfile
+.dockerignore
